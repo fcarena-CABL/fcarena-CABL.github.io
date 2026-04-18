@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    
+    <title>Portafolio</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>PORTAFOLIO 02</h1>
+        <p class="frase">menú de navegación</p>
+
+        <nav class="menu">
+            <button onclick="irInicio()">Inicio</button>
+            <button onclick="irContacto()">Contacto</button>
+        </nav>
+    </header>
+
+    <script>
+        function irInicio() {
+            globalThis.location.href = "../index.html";
+        }
+
+        function irContacto() {
+            globalThis.location.href = "../pages/contacto.html";
+        }
+    </script>
+
+    <main>
+        <section>
+            <h2>Menú de Navegación</h2>
+            <p>
+                - Inicio: Volver a la página principal<br>
+                - Contacto: Ir a la página de contacto
+            </p>
+        </section>
+    </main>
+
+</body>
+</html>

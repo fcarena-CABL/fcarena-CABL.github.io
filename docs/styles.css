@@ -1,0 +1,91 @@
+body {
+            margin: 0;
+            background-color: #0a0a0a;
+            color: #d6d6d6;
+            font-family: "Courier New", monospace;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #222;
+        }
+
+        header h1 {
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-weight: normal;
+            border-bottom: 1px solid #222;
+            padding-bottom: 5px;
+        }
+
+        button {
+            background-color: transparent;
+            border: 1px solid #444;
+            color: #ccc;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #111;
+        }
+
+        .frase {
+            font-style: italic;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: #8b0000;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+        }
+
+        a:hover {
+            color: #b22222;
+            border-bottom: 1px solid #8b0000;
+        }
+
+        /* Estilos para el menú de navegación */
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+        }
+
+        .menu button {
+            background-color: transparent;
+            border: none;
+            color: #aaa;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .menu button:hover {
+            background-color: #111;
+            color: #fff;
+        }

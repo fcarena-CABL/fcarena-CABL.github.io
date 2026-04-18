@@ -3,98 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     
     <title>Portafolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            background-color: #0a0a0a;
-            color: #d6d6d6;
-            font-family: "Courier New", monospace;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 20px;
-            border-bottom: 1px solid #222;
-        }
-
-        header h1 {
-            font-weight: normal;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 0.9em;
-            color: #888;
-        }
-
-        main {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        section {
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-weight: normal;
-            border-bottom: 1px solid #222;
-            padding-bottom: 5px;
-        }
-
-        button {
-            background-color: transparent;
-            border: 1px solid #444;
-            color: #ccc;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #111;
-        }
-
-        .frase {
-            font-style: italic;
-            color: #777;
-            margin-top: 20px;
-        }
-    </style>
 </head>
-<body>
 
+<body>
     <header>
         <h1>PORTAFOLIO 01</h1>
-        <p>registro de actividades</p>
+        <p class="frase">registro de actividades</p>
     </header>
 
     <main>
-
         <section>
-            <h2>Actividad</h2>
+            <h2>Actividades</h2>
             <p>
-                Crear mi primer portafolio con GitHub Pages.
-            </p>
-            <p class="frase">
-                "Curso DevOps 2026"
+                1. Crear mi primer portafolio con GitHub Pages.<br>
+                2. Incluir menu de navegación.
             </p>
         </section>
 
         <section>
-            <button onclick="mensaje()">Propietario</button>
+            <h2>Proyectos</h2>
+            <a href="pages/menu.html">
+                Ver Actividad 2
+            </a>
         </section>
-
     </main>
-
-    <script>
-        function mensaje() {
-            alert("Francisco Carena - francisco.carena@cablasociados.com");
-        }
-    </script>
 
 </body>
 </html>
