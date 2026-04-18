@@ -3,55 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página</title>
+    
+    <title>Portafolio</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            background-color: #0a0a0a;
+            color: #d6d6d6;
+            font-family: "Courier New", monospace;
         }
 
         header {
-            background-color: #333;
-            color: white;
-            padding: 15px;
             text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #222;
+        }
+
+        header h1 {
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 0.9em;
+            color: #888;
         }
 
         main {
-            padding: 20px;
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-weight: normal;
+            border-bottom: 1px solid #222;
+            padding-bottom: 5px;
         }
 
         button {
-            padding: 10px 15px;
-            border: none;
-            background-color: #007BFF;
-            color: white;
+            background-color: transparent;
+            border: 1px solid #444;
+            color: #ccc;
+            padding: 10px;
             cursor: pointer;
-            border-radius: 5px;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #111;
+        }
+
+        .frase {
+            font-style: italic;
+            color: #777;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Mi página de prueba</h1>
+        <h1>PORTAFOLIO 01</h1>
+        <p>registro de actividades</p>
     </header>
 
     <main>
-        <p>Este es un ejemplo simple de HTML.</p>
 
-        <button onclick="saludar()">Hacer clic</button>
+        <section>
+            <h2>Actividad</h2>
+            <p>
+                Este es mi primer portafolio con GitHub Pages.
+            </p>
+            <p class="frase">
+                "Curso DevOps 2026"
+            </p>
+        </section>
+
+        <section>
+            <button onclick="mensaje()">Ver URL del sitio</button>
+        </section>
+
     </main>
 
     <script>
-        function saludar() {
-            alert("¡Hola! Esto funciona 🎉");
+        function mensaje() {
+            alert("https://fcarena-cabl.github.io/");
         }
     </script>
 
