@@ -17,10 +17,20 @@
 
     <main>
         <section>
+            <h2>Hola!</h2>
+
+            <input type="text" id="nombreInput" placeholder="Ingrese su nombre aquí">
+            <button onclick="guardarNombre()">Guardar</button>
+
+            <p id="saludo"></p>
+        </section>
+
+        <section>
             <h2>Actividades</h2>
             <p>
                 1. Crear mi primer portafolio con GitHub Pages.<br>
                 2. Incluir menu de navegación.
+                3. Hacer uso de GitHub Flow mediante el uso de Code Spaces y el manejo de branches, pull requests, code review y merge.
             </p>
         </section>
 
@@ -31,6 +41,37 @@
             </a>
         </section>
     </main>
+
+    <script>    
+        function guardarNombre() {
+            const nombre = document.getElementById("nombreInput").value.trim();
+
+            if (nombre === "") {
+                sessionStorage.removeItem("nombreUsuario");
+                document.getElementById("saludo").innerText = "";
+                return;
+            }
+
+            sessionStorage.setItem("nombreUsuario", nombre);
+            mostrarSaludo();
+        }
+
+        function mostrarSaludo() {
+            const nombre = sessionStorage.getItem("nombreUsuario");
+
+            if (nombre) {
+                document.getElementById("saludo").innerText =
+                    "Bienvenido a mi sitio, " + nombre;
+
+                document.getElementById("nombreInput").value = nombre;
+            } else {
+                document.getElementById("saludo").innerText = "";
+            }
+        }
+
+        // Ejecutar al cargar
+        window.onload = mostrarSaludo;
+    </script>
 
 </body>
 </html>
