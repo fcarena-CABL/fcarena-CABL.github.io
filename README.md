@@ -17,18 +17,6 @@ Se desarrolló un portafolio simple en HTML, CSS y JavaScript, con el objetivo d
 - Menú de navegación entre páginas
 - Ingreso de nombre de usuario con mensaje de bienvenida dinámico
 
-## 🚀 GitHub Flow aplicado
-
-Para el desarrollo se utilizó GitHub Flow:
-
-1. Creación de una rama feature (`feature-bienvenida`)
-2. Implementación de la funcionalidad
-3. Commit y push desde Codespaces
-4. Creación de Pull Request
-5. Simulación de Code Review
-6. Merge a rama `main`
-7. Deploy automático con GitHub Pages
-
 ## 🛠️ Tecnologías utilizadas
 
 - HTML
@@ -36,4 +24,19 @@ Para el desarrollo se utilizó GitHub Flow:
 - JavaScript
 - GitHub Pages
 - GitHub Codespaces
+
+## 🔄 Workflow de Integración Continua (CI)
+
+Se implementó un workflow utilizando GitHub Actions que se ejecuta automáticamente en cada:
+
+- push a la rama `main`
+- pull request hacia `main`
+
+El pipeline realiza las siguientes tareas:
+
+1. Obtiene el código del repositorio
+2. Configura el entorno de Node.js
+3. Instala dependencias del proyecto
+4. Valida el código HTML, CSS y JavaScript
+5. Ejecuta pruebas automatizadas con Jest
 

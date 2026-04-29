@@ -1,0 +1,28 @@
+{
+  "name": "fcarena-cabl.github.io",
+  "version": "1.0.0",
+  "description": "Este proyecto consiste en la creación de un sitio web estático publicado mediante GitHub Pages.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcarena-CABL/fcarena-CABL.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fcarena-CABL/fcarena-CABL.github.io/issues"
+  },
+  "homepage": "https://github.com/fcarena-CABL/fcarena-CABL.github.io#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}

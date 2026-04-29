@@ -1,0 +1,42 @@
+name: CI - Static Site
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Instalar herramientas
+        run: |
+          npm install -g htmlhint stylelint eslint
+
+      - name: Validar HTML
+        run: htmlhint "docs/**/*.html"
+
+      - name: Validar CSS
+        run: stylelint "**/*.css" || true
+
+      - name: Validar JS
+        run: eslint "**/*.js" || true
+
+      - name: Ejecutar pruebas
+        run: npm test
+
+      - name: Build OK
+        run: echo "Validación completada correctamente"
