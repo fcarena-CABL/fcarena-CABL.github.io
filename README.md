@@ -40,3 +40,10 @@ El pipeline realiza las siguientes tareas:
 4. Valida el código HTML, CSS y JavaScript
 5. Ejecuta pruebas automatizadas con Jest
 
+## 📊 Estado del build
+
+Ejemplos de vistas utilizando GitHub Actions con ejecución autimática:
+
+![Build 1](docs/images/actions-1.png)
+![Build 2](docs/images/actions-2.png)
+![Build 3](docs/images/actions-3.png)
